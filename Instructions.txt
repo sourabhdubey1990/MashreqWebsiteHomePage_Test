@@ -1,4 +1,4 @@
-*clone the project in C drive. Drivers and jars are placed in the same folder.
+*Please create a folder in c driver with name 'Selenium' and clone the project in the same folder. Drivers and jars are placed in the same folder.
 
 *Keep Chrome driver "chromedriver", "TestNG"  and selenium server standalone "selenium-server-standalone-3.141.59"in the same folder directory .
 
