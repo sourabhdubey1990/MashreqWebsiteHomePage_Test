@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43240" started-at="2019-07-18T22:08:32Z" finished-at="2019-07-18T22:09:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43240" started-at="2019-07-18T22:08:32Z" finished-at="2019-07-18T22:09:16Z">
+      <class name="MashreqWebsiteHomePage.Tests">
+        <test-method status="PASS" signature="launch_WebSite()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="launch_WebSite" duration-ms="28281" started-at="2019-07-19T03:38:32Z" description="This step will launch the application" finished-at="2019-07-19T03:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_WebSite -->
+        <test-method status="PASS" signature="varifyHeaderItems()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="varifyHeaderItems" duration-ms="2006" started-at="2019-07-19T03:39:01Z" description="This step will verify 9 items on homepage..Corporate, Business, International etc." depends-on-methods="MashreqWebsiteHomePage.Tests.launch_WebSite" finished-at="2019-07-19T03:39:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyHeaderItems -->
+        <test-method status="PASS" signature="verify_MashreqNews()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="verify_MashreqNews" duration-ms="2220" started-at="2019-07-19T03:39:03Z" description="This method verifies Mashreq News on home page" depends-on-methods="MashreqWebsiteHomePage.Tests.varifyHeaderItems" finished-at="2019-07-19T03:39:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_MashreqNews -->
+        <test-method status="PASS" signature="verify_ContactUs_Link()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="verify_ContactUs_Link" duration-ms="2287" started-at="2019-07-19T03:39:05Z" description="This method verifies Contact Us Link" depends-on-methods="MashreqWebsiteHomePage.Tests.verify_MashreqNews" finished-at="2019-07-19T03:39:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ContactUs_Link -->
+        <test-method status="PASS" signature="verify_ContactFormPageCases()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="verify_ContactFormPageCases" duration-ms="4442" started-at="2019-07-19T03:39:07Z" description="This method validate Contact Form Scenarios" depends-on-methods="MashreqWebsiteHomePage.Tests.verify_ContactUs_Link" finished-at="2019-07-19T03:39:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ContactFormPageCases -->
+        <test-method status="PASS" signature="verify_DropDown_IAmLookingTo()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="verify_DropDown_IAmLookingTo" duration-ms="736" started-at="2019-07-19T03:39:12Z" description="This method Verify dropdown having 4 values" depends-on-methods="MashreqWebsiteHomePage.Tests.verify_ContactFormPageCases" finished-at="2019-07-19T03:39:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_DropDown_IAmLookingTo -->
+        <test-method status="PASS" signature="verify_SubProduct_DropDown()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="verify_SubProduct_DropDown" duration-ms="838" started-at="2019-07-19T03:39:12Z" description="This method Verifies Sub Product dropdown and values" depends-on-methods="MashreqWebsiteHomePage.Tests.verify_DropDown_IAmLookingTo" finished-at="2019-07-19T03:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SubProduct_DropDown -->
+        <test-method status="PASS" signature="verify_MobileNumber()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="verify_MobileNumber" duration-ms="1621" started-at="2019-07-19T03:39:13Z" description="This method verifies 7 digit Mobile Number" depends-on-methods="MashreqWebsiteHomePage.Tests.verify_SubProduct_DropDown" finished-at="2019-07-19T03:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_MobileNumber -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:MashreqWebsiteHomePage.Tests@7921b0a2]" name="AfterClass" is-config="true" duration-ms="739" started-at="2019-07-19T03:39:15Z" finished-at="2019-07-19T03:39:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- MashreqWebsiteHomePage.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

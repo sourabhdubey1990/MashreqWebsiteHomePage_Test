@@ -1,0 +1,13 @@
+package MashreqWebsiteHomePage;
+
+import org.testng.annotations.Test;
+
+public class Tests {
+	
+	@Test(priority=1,description="This step will launch the application and verify title")
+	public void launch_WebSite()
+	{
+		
+	}
+
+}

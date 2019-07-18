@@ -1,0 +1,41 @@
+*clone the project in C drive. Drivers and jars are placed in the same folder.
+
+*Keep Chrome driver "chromedriver", "TestNG"  and selenium server standalone "selenium-server-standalone-3.141.59"in the same folder directory .
+
+*If Required Please set CHrome driver Path 
+
+*In your eclipse right click to your project click properties and than click on "java build path" and than under libraries
+click on "add external jars". select "selenium-server-standalone-3.141.59",  "testng-6.7" , "chromedriver(Latest)"  from the selenium folder.
+
+* Click on apply and close button.
+
+Import all the packages by pressing Crtl+Shift+O or add below import statements. Below are the Packages you nee to import
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+*Refresh Project When Required
+
+*right click on file MashreqWebsiteHomePageTests.java and run as testng.
+
+*Once Test Completes kindly verify results in console or refresh project and check in 'test-output' folder.
+
+
+
+
+
+
+
+
+

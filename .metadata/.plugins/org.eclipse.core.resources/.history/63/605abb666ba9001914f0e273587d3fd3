@@ -1,0 +1,54 @@
+package MashreqWebsiteHomePage;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class MashreqWebsiteHomePageTesting {
+
+	
+	
+	
+	public static void main(String[] args) throws InterruptedException {
+
+		/* Chrome Options to start window maximised */
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-extensions");
+		options.addArguments("--start-maximized");
+
+		/* Chome properties are set */
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+		/* Driver Initialisation */
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("https://www.mashreqbank.com");
+
+		varifyHeaderItems(driver);
+
+		Thread.sleep(4000);
+		driver.quit();
+	}
+
+	public static void varifyHeaderItems(WebDriver driver)
+	{
+		String items[]=",Corporate,Business,International,Private Banking,Al Islami,Gold,Mashreq Securities,Mashreq Capital,Mashreq Global Services".split(",");
+		System.out.println(items);
+		
+		int i=0;
+		java.util.List<WebElement> listOfHeaderItems=driver.findElements(By.xpath("//*[@class='leftLinks']//li"));
+		for (WebElement webElement : listOfHeaderItems) {
+					
+			Assert.assertEquals(webElement.getText().trim(), items[i]);
+			i++;
+			
+		}
+		
+	}
+}

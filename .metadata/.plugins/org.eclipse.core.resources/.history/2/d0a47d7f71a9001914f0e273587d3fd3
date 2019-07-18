@@ -1,0 +1,49 @@
+package MashreqWebsiteHomePage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Tests {
+
+	WebDriver driver;
+
+	@Test(priority = 1, description = "This step will launch the application and verify title")
+	public void launch_WebSite() {
+		// Chrome Options to start window maximized
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notification");
+		options.addArguments("--start-maximized");
+
+		// Chrome properties are set
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+		// Driver Initialization
+		driver = new ChromeDriver(options);
+		driver.get("https://www.mashreqbank.com");
+	}
+
+	@Test(dependsOnMethods = "launch_WebSite", description = "This step will verify 9 items on homepage..Corporate, Business, International etc.")
+	public void varifyHeaderItems() {
+		String items[] = ",Corporate,Business,International,Private Banking,Al Islami,Gold,Mashreq Securities,Mashreq Capital,Mashreq Global Services"
+				.split(",");
+		System.out.println(items);
+
+		int i = 0;
+		java.util.List<WebElement> listOfHeaderItems = driver.findElements(By.xpath("//*[@class='leftLinks']//li"));
+		for (WebElement webElement : listOfHeaderItems) {
+
+			Assert.assertTrue(webElement.getText().trim().contains(items[i]));
+			webElement.isDisplayed();
+			System.out.println("WebElement :" + webElement.getText());
+			i++;
+
+		}
+
+	}
+
+}

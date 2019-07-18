@@ -1,0 +1,181 @@
+!SESSION 2019-07-18 20:01:42.903 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-18 20:02:45.349
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2019-07-18 20:22:39.825
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49610 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--845472205\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar org.testng.remote.RemoteTestNG -serport 49610 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--845472205\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-18 20:42:54.193
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49231 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-138617482\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar org.testng.remote.RemoteTestNG -serport 49231 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-138617482\testng-customsuite.xml
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-07-18 20:47:20.101
+!MESSAGE No repository found at http://download.eclipse.org/eclipse/updates/4.9.
+
+!ENTRY org.testng.eclipse 1 0 2019-07-18 20:48:55.227
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49440 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-758201129\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar org.testng.remote.RemoteTestNG -serport 49440 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-758201129\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-18 21:05:24.949
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49945 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1853668686\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar org.testng.remote.RemoteTestNG -serport 49945 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1853668686\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-18 21:22:57.718
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52043 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-561874088\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar org.testng.remote.RemoteTestNG -serport 52043 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-561874088\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-18 21:55:31.293
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53723 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--235689600\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar org.testng.remote.RemoteTestNG -serport 53723 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--235689600\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:15:22.858
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50795 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-251323800\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 50795 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-251323800\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:18:08.748
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50970 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-204631266\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 50970 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-204631266\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:20:33.581
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 51128 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--303439786\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 51128 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--303439786\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-07-19 02:20:34.820
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:38:47.052
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52097 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1900196459\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 52097 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1900196459\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-07-19 02:38:47.570
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:43:31.700
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52369 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1312671209\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 52369 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1312671209\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-07-19 02:43:31.921
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:53:50.871
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 52942 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1145373499\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 52942 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1145373499\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:55:58.924
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53081 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--253772717\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 53081 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--253772717\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 02:58:46.487
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53261 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1120399094\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 53261 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1120399094\testng-customsuite.xml
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-07-19 02:58:46.797
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 03:04:13.091
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 53577 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-797758357\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 53577 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-797758357\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 03:12:52.890
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 54100 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-48202914\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 54100 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-48202914\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 03:30:45.983
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55036 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-2100414153\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 55036 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-2100414153\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 03:33:28.562
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55213 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-2083682771\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 55213 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse-2083682771\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2019-07-19 03:38:30.380
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar C:\Selenium\Mahreq\bin C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar C:\Selenium\testng-6.7.jar C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55521 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--383679109\testng-customsuite.xml
+java -ea -classpath C:\Users\Dell\eclipse\java-2018-09\eclipse\configuration\org.eclipse.osgi\527\0\.cp\lib\testng-remote.jar:C:\Selenium\Mahreq\bin:C:\Users\Dell\Downloads\Selenium\selenium-server-standalone-3.141.59.jar:C:\Selenium\testng-6.7.jar:C:\Users\Dell\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Dell\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Dell\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Dell\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 55521 -protocol json -d C:\Selenium\Mahreq\test-output C:\Users\Dell\AppData\Local\Temp\testng-eclipse--383679109\testng-customsuite.xml

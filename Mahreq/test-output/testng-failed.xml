@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
+    <classes>
+      <class name="MashreqWebsiteHomePage.Tests">
+        <methods>
+          <include name="verify_ContactUs_Link"/>
+          <include name="verify_SubProduct_DropDown"/>
+          <include name="launch_WebSite"/>
+          <include name="verify_MobileNumber"/>
+          <include name="AfterClass"/>
+          <include name="verify_ContactFormPageCases"/>
+          <include name="verify_DropDown_IAmLookingTo"/>
+          <include name="verify_MashreqNews"/>
+        </methods>
+      </class> <!-- MashreqWebsiteHomePage.Tests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

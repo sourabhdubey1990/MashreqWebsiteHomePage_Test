@@ -1,0 +1,150 @@
+package MashreqWebsiteHomePage;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Tests {
+
+	WebDriver driver;
+
+	@Test(priority = 1, description = "This step will launch the application and verify title")
+	public void launch_WebSite() {
+		
+		// Chrome Options to start window maximized
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+
+		// Chrome properties are set
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+		// Driver Initialization
+		driver = new ChromeDriver(options);
+		driver.get("https://www.mashreqbank.com");
+		assertTrue(driver.getTitle().contains("mashreqbank"));
+	}
+
+	@Test(dependsOnMethods = "launch_WebSite", description = "This step will verify 9 items on homepage..Corporate, Business, International etc.")
+	public void varifyHeaderItems() {
+		String items[] = ",Corporate,Business,International,Private Banking,Al Islami,Gold,Mashreq Securities,Mashreq Capital,Mashreq Global Services"
+				.split(",");
+		System.out.println(items);
+
+		int i = 0;
+		java.util.List<WebElement> listOfHeaderItems = driver.findElements(By.xpath("//*[@class='leftLinks']//li"));
+		for (WebElement webElement : listOfHeaderItems) {
+
+			Assert.assertTrue(webElement.getText().trim().contains(items[i]));
+			System.out.println("Item '" + webElement.getText() + "' is desplayed on homepage!!!");
+			i++;
+
+		}
+
+	}
+
+	@Test(dependsOnMethods = "launch_WebSite", description = "This method verifies Mashreq News on home page")
+	public void verify_MashreqNews() {
+		scrollWindow(driver, 750);
+
+		if (driver.findElement(By.xpath("//*[text()=' Mashreq News']")).isDisplayed())
+			System.out.println("The Mashreq News displayed on the homepage successfully!!");
+
+	}
+
+	@Test(dependsOnMethods = "verify_MashreqNews", description = "This method verifies Contact Us Link")
+	public void verify_ContactUs_Link() {
+
+		if (driver.findElement(By.xpath("(//*[@href='/uae/en/personal/contactus'])[3]")).isDisplayed())
+			System.out.println("“Contact Us Link” displayed on the homepage!!");
+		
+		//Click on contact us link and wait for form page to load
+		driver.findElement(By.xpath("(//*[@href='/uae/en/personal/contactus'])[3]")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(
+				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//*[@href='status-tracker']"))));
+
+	}
+
+	@Test(dependsOnMethods = "verify_ContactUs_Link", description = "This method validate Contact Form Scenarios")
+	public void verify_ContactFormPageCases() {
+		scrollWindow(driver, 500);
+		driver.findElement(By.xpath("//*[@id='btnSubmit']")).click();
+		WebElement erroMessage = driver
+				.findElement(By.xpath("//*[contains(text(),'Please select an item in the list')]"));
+
+		if (erroMessage.isDisplayed())
+			System.out.println("Verified Notification successully :" + erroMessage.getText());
+
+	}
+
+	@Test(dependsOnMethods = "verify_ContactFormPageCases", description = "This method Verify dropdown having 4 values")
+	public void verify_DropDown_IAmLookingTo() {
+		driver.findElement(By.xpath("//*[@id='reachoutforproduct']")).click();
+		java.util.List<WebElement> dropdownItems = driver
+				.findElements(By.xpath("//*[@id='reachoutforproduct']//option"));
+		if (dropdownItems.size() == 5)
+			System.out.println("I am looking to dropdown is having total 4 items");
+		for (WebElement dropDownValue : dropdownItems) {
+			System.out.println("DropDown Values are :" + dropDownValue.getText());
+		}
+	}
+
+	@Test(dependsOnMethods = "verify_ContactFormPageCases", description = "This method Verifies Sub Product dropdown and values")
+	public void verify_SubProduct_DropDown() {
+		// To Verify SubProduct_DropDown is empty initially
+		driver.findElement(By.xpath("//*[@id='product']")).click();
+		if (driver.findElements(By.xpath("//*[@id='product']//option")).size() == 1)
+			System.out.println("Verified SubProduct_DropDown is empty initially");
+
+		Select product = new Select(driver.findElement(By.xpath("//*[@id='need']")));
+		product.selectByVisibleText("Loans");
+		driver.findElement(By.xpath("//*[@id='product']")).click();
+
+		java.util.List<WebElement> dropdownItems = driver.findElements(By.xpath("//*[@id='product']//option"));
+		if (dropdownItems.size() == 7)
+			System.out.println("I am looking to dropdown is having total 6 items");
+
+		for (WebElement subProductValue : dropdownItems) {
+			if (subProductValue.getText().equals("Home Loan UAE Resident"))
+				System.out.println("Verified one of the value is 'Home Loan UAE Resident'");
+		}
+
+	}
+
+	@Test(dependsOnMethods = "verify_ContactFormPageCases", description = "This method verifies 7 digit Mobile Number")
+	public void verify_MobileNumber() {
+		driver.findElement(By.xpath("//*[@id='mobile']")).clear();
+		driver.findElement(By.xpath("//*[@id='mobile']")).sendKeys("123456");
+		driver.findElement(By.xpath("//*[@id='btnSubmit']")).click();
+		WebElement erroMessage = driver
+				.findElement(By.xpath("//*[contains(text(),'Mobile number should be 7 digit')]"));
+
+		if (erroMessage.isDisplayed())
+			System.out.println("Verified ErrorMessage successully :" + erroMessage.getText());
+
+		driver.findElement(By.xpath("//*[@id='mobile']")).clear();
+		driver.findElement(By.xpath("//*[@id='mobile']")).sendKeys("1234567");
+		driver.findElement(By.xpath("//*[@id='btnSubmit']")).click();
+
+		if (!erroMessage.isDisplayed())
+			System.out.println("Verified incorrect mobile digit ErrorMessage is not present");
+	}
+
+	public void scrollWindow(WebDriver driver, int value) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0," + value + ")");
+
+	}
+
+}

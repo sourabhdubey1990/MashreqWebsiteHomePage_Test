@@ -1,0 +1,34 @@
+package MashreqWebsiteHomePage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+
+public class Tests {
+	
+	@Test(priority=1,description="This step will launch the application and verify title")
+	public void launch_WebSite()
+	{
+		/* Chrome Options to start window maximised */
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-extensions");
+		options.addArguments("--start-maximized");
+
+		/* Chome properties are set */
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+
+		/* Driver Initialisation */
+		WebDriver driver = new ChromeDriver(options);
+		driver.get("https://www.mashreqbank.com");
+	}
+	
+	@Test(priority=2,description="This step will verify 9 items on homepage..Corporate, Business, International etc.")
+	public void varifyHeaderItems()
+	{
+		
+	}
+	
+	
+
+}

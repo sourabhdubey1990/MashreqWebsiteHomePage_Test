@@ -1,0 +1,189 @@
+package MashreqWebsiteHomePage;
+
+import static org.testng.Assert.assertTrue;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class Tests {
+	
+				
+		WebDriver driver;
+	
+
+	@Test(priority = 1, description = "This step will launch the application")
+	public void launch_WebSite() throws IOException {
+		
+		// Chrome Options to start window maximized
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+
+		// Chrome properties are set
+		System.setProperty("webdriver.chrome.driver",getObjectFromRepository("CROMEDRIVERPATH"));
+		
+		// Chrome Driver Initialization
+		driver = new ChromeDriver(options);
+		driver.get(getObjectFromRepository("URL"));
+		
+	}
+
+	@Test(dependsOnMethods = "launch_WebSite", description = "This step will verify 9 items on homepage..Corporate, Business, International etc.")
+	public void varifyHeaderItems() throws IOException {
+		String items[] = getObjectFromRepository("ITEMS").split(",");
+		System.out.println(items);
+
+		int i = 0;
+		java.util.List<WebElement> listOfHeaderItems = driver.findElements(By.xpath(getObjectFromRepository("HEADEITEMSLIST")));
+		for (WebElement webElement : listOfHeaderItems) {
+
+			Assert.assertTrue(webElement.getText().trim().contains(items[i]));
+			System.out.println("Item '" + webElement.getText() + "' is desplayed on homepage!!!");
+			i++;
+
+		}
+
+	}
+
+	@Test(dependsOnMethods = "launch_WebSite", description = "This method verifies Mashreq News on home page")
+	public void verify_MashreqNews() throws Exception {
+
+		scrollWindow(driver, 600);
+
+		if (driver.findElement(By.xpath(getObjectFromRepository("MASHREQNEWS"))).isDisplayed())
+			System.out.println("The Mashreq News displayed on the homepage successfully!!");
+
+	}
+
+	@Test(dependsOnMethods = "verify_MashreqNews", description = "This method verifies Contact Us Link")
+	public void verify_ContactUs_Link() throws IOException {
+		scrollWindow(driver, 200);
+		if (driver.findElement(By.xpath(getObjectFromRepository("CONTACTUSLINK"))).isDisplayed())
+			System.out.println("“Contact Us Link” displayed on the homepage!!");
+
+		// Click on contact us link and wait for 'Form Page' to load
+		
+		driver.findElement(By.xpath(getObjectFromRepository("CONTACTUSLINK"))).click();
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(
+				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(getObjectFromRepository("STATUSTRACKERBUTTON")))));
+
+	}
+
+	@Test(dependsOnMethods = "verify_ContactUs_Link", description = "This method validate Contact Form Scenarios")
+	public void verify_ContactFormPageCases() throws IOException {
+		
+		//click on submit button without entering values
+		scrollWindow(driver, 500);
+		driver.findElement(By.xpath(getObjectFromRepository("SUBMITBUTTON"))).click();
+		WebElement i_Am_Looking_To = driver
+				.findElement(By.xpath(getObjectFromRepository("I_AM_LOOKING_TO_DROPDOWN")));
+
+		if (i_Am_Looking_To.isDisplayed())
+			System.out.println("Navigated To Required Field To Be Filled Before Submit :" );
+
+	}
+
+	@Test(dependsOnMethods = "verify_ContactFormPageCases", description = "This method Verify dropdown having 4 values")
+	public void verify_DropDown_IAmLookingTo() throws IOException {
+		
+		//To Click on dropdown, taking values in list and verifing number of dropdown values
+		
+		driver.findElement(By.xpath(getObjectFromRepository("I_AM_LOOKING_TO_DROPDOWN"))).click();
+		java.util.List<WebElement> dropdownItems = driver
+				.findElements(By.xpath(getObjectFromRepository("I_AM_LOOKING_TO_DROPDOWN_VALUES")));
+		if (dropdownItems.size() == 5)
+			System.out.println("I am looking to dropdown is having total 4 items");
+		for (WebElement dropDownValue : dropdownItems) {
+			System.out.println("DropDown Values are :" + dropDownValue.getText());
+		}
+	}
+
+	@Test(dependsOnMethods = "verify_ContactFormPageCases", description = "This method Verifies Sub Product dropdown and values")
+	public void verify_SubProduct_DropDown() throws IOException {
+		
+		// To Verify SubProduct_DropDown is empty initially
+		driver.findElement(By.xpath(getObjectFromRepository("SUBPRODUCT_DROPDOWN"))).click();
+		if (driver.findElements(By.xpath(getObjectFromRepository("SUBPRODUCT_DROPDOWN_VALUES"))).size() == 1)
+			System.out.println("Verified SubProduct_DropDown is empty initially");
+		
+		//To select Loans product from product dropdown
+		Select product = new Select(driver.findElement(By.xpath(getObjectFromRepository("PRODUCT_DROPDOWN"))));
+		product.selectByVisibleText("Loans");
+		
+		//To Verify number of items in subProduct dropdown
+		driver.findElement(By.xpath(getObjectFromRepository("SUBPRODUCT_DROPDOWN"))).click();
+		java.util.List<WebElement> dropdownItems = driver.findElements(By.xpath(getObjectFromRepository("SUBPRODUCT_DROPDOWN_VALUES")));
+		if (dropdownItems.size()== 7)
+			System.out.println("I am looking to dropdown is having total 6 items");
+
+		//To Verify 'Home Loan UAE Resident' value in the sub product dropdown
+		for (WebElement subProductValue : dropdownItems) {
+			if (subProductValue.getText().equals("Home Loan UAE Resident"))
+				System.out.println("Verified one of the value is 'Home Loan UAE Resident'");
+		}
+
+	}
+
+	@Test(dependsOnMethods = "verify_ContactFormPageCases", description = "This method verifies 7 digit Mobile Number")
+	public void verify_MobileNumber() throws IOException {
+		
+		//Initial check with 6 digit mobile number
+		driver.findElement(By.xpath(getObjectFromRepository("MOBILE_TEXTBOX"))).clear();
+		driver.findElement(By.xpath(getObjectFromRepository("MOBILE_TEXTBOX"))).sendKeys("123456");
+		driver.findElement(By.xpath(getObjectFromRepository("SUBMITBUTTON"))).click();
+		WebElement erroMessage = driver
+				.findElement(By.xpath(getObjectFromRepository("ERROR_MESSAGE")));
+
+		if (erroMessage.isDisplayed())
+			System.out.println("Verified ErrorMessage successully :" + erroMessage.getText());
+		
+		//Final Check with 7 digit mobile number
+		driver.findElement(By.xpath(getObjectFromRepository("MOBILE_TEXTBOX"))).clear();
+		driver.findElement(By.xpath(getObjectFromRepository("MOBILE_TEXTBOX"))).sendKeys("1234567");
+		driver.findElement(By.xpath(getObjectFromRepository("SUBMITBUTTON"))).click();
+
+		if (!erroMessage.isDisplayed())
+			System.out.println("Verified incorrect mobile digit ErrorMessage is not present");
+	}
+
+	@org.testng.annotations.AfterClass
+	public void AfterClass() {
+		driver.quit();
+	}
+	
+	//Generic method to perform scroll in the application
+	public void scrollWindow(WebDriver driver, int value) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0," + value + ")");
+
+	}
+	
+	public String getObjectFromRepository(String key) throws IOException
+	{
+		//Initialize Object Repository To Read All Objects
+		File objectRepo=new File("./Repository/ObjectRepository.properties");
+		FileInputStream fis=new FileInputStream(objectRepo);
+		Properties property= new Properties();
+		property.load(fis);
+		
+		//Read Objects Value String From Repo
+		String value=property.getProperty(key);
+		return value;
+		
+	}
+	
+
+}

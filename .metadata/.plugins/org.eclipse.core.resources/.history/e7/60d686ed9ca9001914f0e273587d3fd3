@@ -1,0 +1,11 @@
+URL=https://www.mashreqbank.com
+CROMEDRIVERPATH=C:\\Selenium\\chromedriver.exe
+ITEMS=,Corporate,Business,International,Private Banking,Al Islami,Gold,Mashreq Securities,Mashreq Capital,Mashreq Global Services
+HEADEITEMSLIST=//*[@class='leftLinks']//li
+MASHREQNEWS=//*[text()=' Mashreq News']
+CONTACTUSLINK=(//*[@href='/uae/en/personal/contactus'])[3]
+STATUSTRACKERBUTTON=//*[@href='status-tracker']
+SUBMITBUTTON=//*[@id='btnSubmit']
+ERRORNOTIFICATION=//*[contains(text(),'Please select an item in the list')]
+I_AM_LOOKING_TO_DROPDOWN=//*[@id='reachoutforproduct']
+I_AM_LOOKING_TO_DROPDOWN_VALUES=//*[@id='reachoutforproduct']//option
